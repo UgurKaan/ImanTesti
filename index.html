@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Hangi Özelliklere sahip olduğunuzu işaretleyiniz:</h1>
+            </div>
+        </div>
+        <div class="row" id="test"></div>
+        <div class="row">
+            <div class="col-l-12">
+                <button onclick="showResults();" class="btn btn-lg btn-primary mb-5">Testi Tamamla!</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="libs/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        var allData = [];
+        var results = { mumin: 0, musrik: 0, munafik: 0 };
+        $(document).ready(function () {
+            var mumin = $.ajax({
+                url: "data/mumin.txt",
+                method: "GET",
+                contentType: "text/plain",
+                async: false
+            }).responseText.split('\n');
+            var musrik = $.ajax({
+                url: "data/musrik.txt",
+                method: "GET",
+                contentType: "text/plain",
+                async: false
+            }).responseText.split('\n');
+            var munafik = $.ajax({
+                url: "data/munafik.txt",
+                method: "GET",
+                contentType: "text/plain",
+                async: false
+            }).responseText.split('\n');
+            results.totalMumin = mumin.length;
+            results.totalMusrik = musrik.length;
+            results.totalMunafik = munafik.length;
+            for (var i = 0; i < mumin.length; i++) {
+                allData.push({
+                    text: mumin[i],
+                    type: "Mümin"
+                });
+            }
+            for (var i = 0; i < musrik.length; i++) {
+                allData.push({
+                    text: musrik[i],
+                    type: "Müşrik"
+                });
+            }
+            for (var i = 0; i < munafik.length; i++) {
+                allData.push({
+                    text: munafik[i],
+                    type: "Münafık"
+                });
+            }
+            allData = shuffle(allData);
+            loadTest();
+        });
+        function loadTest() {
+            var html = "";
+            for (var i = 0; i < allData.length; i++) {
+                var order = i + 1;
+                html += '<div class="col-lg-12>' +
+                    '<div class="card">' +
+                    '  <div class="card-body">' +
+                    '<b>' + order + '. </b>' +
+                    allData[i].text +
+                    '<br /><div class="btn-group" role="group" aria-label="Basic mixed styles example">' +
+                    '  <button data-type="' + allData[i].type + '" data-answer="1" data-button="selection" type="button" class="btn btn-success">Evet</button>' +
+                    '  <button data-type="' + allData[i].type + '"  data-answer="0" data-button="selection" type="button" class="btn btn-danger">Hayır</button>' +
+                    '</div>' +
+                    '  </div>' +
+                    '</div>' +
+                    '</div>';
+            }
+            $("#test").html(html);
+
+            $("button[data-button='selection']").each(function (i, item) {
+                $(item).click(function (e) {
+                    
+                    $(e.currentTarget).closest(".btn-group").find("button").each(function (i, itemx) {
+                        $(itemx).removeAttr("style");
+                        $(itemx).removeAttr("data-selected");
+                    });
+                    $(item).attr("style", "border:3px solid #0f0;");
+                    $(item).attr("data-selected", "1");
+                })
+            });
+        }
+
+        function showResults() {
+            $("button[data-button='selection']").each(function (i, item) {
+                var $item = $(item);
+                if ($item.attr("data-selected") == 1) {
+                    var answer = $item.attr("data-answer");
+                    var type = $item.attr("data-type");
+
+                    if (answer == "1") {
+                        switch (type) {
+                            case "Mümin":
+                                results.mumin++;
+                                break;
+                            case "Müşrik":
+                                results.musrik++;
+                                break;
+                            case "Münafık":
+                                results.munafik++;
+                                break;
+                        }
+                    }
+                }
+            });
+            $("#mdlResults").find(".modal-body").html("Mümin:"+results.mumin+"/"+results.totalMumin+" - %"+ calcPercentage(results.mumin,results.totalMumin)+
+            "<br /> Müşrik:"+results.musrik+"/"+results.totalMusrik+" - %"+ calcPercentage(results.musrik,results.totalMusrik)+
+            "<br /> Münafık:"+results.munafik+"/"+results.totalMunafik+" - %"+ calcPercentage(results.munafik,results.totalMunafik));
+            $("#mdlResults").modal('show');
+        }
+        function calcPercentage(val,total){
+                return parseInt((val*100)/total);
+
+        }
+        function shuffle(array) {
+            var currentIndex = array.length, randomIndex;
+
+            // While there remain elements to shuffle...
+            while (currentIndex != 0) {
+
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+
+                // And swap it with the current element.
+                [array[currentIndex], array[randomIndex]] = [
+                    array[randomIndex], array[currentIndex]];
+            }
+
+            return array;
+        }
+    </script>
+
+
+
+<div class="modal fade" id="mdlResults" tabindex="-1" aria-labelledby="mdlResultsLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="mdlResultsLabel">Test Sonucu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
