@@ -1,50 +1,33 @@
-onlar: ‘ın adı anıldığında kalpleri ürperirler enfal-2
-onlar:’a asla şirk koşmazlar. furkan-68
-onlar:namuslarını (ırzlarını)korurlar. furkan-68
-onlar: (hertürlü)zinaya asla yaklaşmazlar. mü’minun -5
-onlar:namazlarını huşu içinde ve doğru olarak kılarlar. muminun2,9
-onlar:anne ve babalarına öf bile demezler. isra-23
-onlar:boş şeylerden tümüyle yüz çevirirler. mu’minun -3
-onlar: mallarıyla ve canlarıyla cihad ederler. Hucurat 15
-onlar: asla zanda bulunmazlar. casiye -24
-onlar:cahillerle asla tartışmazlar. furkan-63
-onlar:kınayıcının kınamasından korkmazlar. maide-54
-onlar:asla yalan söylemezler. mü’minun-8
-onlar:emanetlerine ihanet etmezler. bakara-177
-onlar:söz verdiklerinde sözünde dururlar. bakara-177
-onlar:zekatlarını hakkıyla verirler. bakara-177
-onlar:yetimin hakkını asla yemezler. nisa-2
-onlar:yolda kalmışlara yardım ederler. bakara-177
-onlar:kafirlere karşı sert,birbirlerine karşı merhametlidir. fetih-29
-onlar:insanların kusurlarını affederler. a.imran-135
-onlar:yalnızca ‘a dayanıp güvenirler. tevbe-20
-onlar:kafirler ile alllah yolunda savaşırlar. a.imran-28
-onlar:darlıkta da bollukta da infak ederler. a.imran-133
-onlar:kızdıkları zaman öfkelerini yenerler. a.imran-133
-onlar:başkalarının ilahlarına sövmezler. en’am-108
-onlar:haksız yere bir cana kıymazlar. en’am-151
-onlar:’ın ayetlerini az bir pahaya satmazlar. a.imran-199
-onlar:hakkı bile bile gizlemezler. bakara-44
-onlar:inananlara ‘sen mü’min değilsin’ demezler. nisa-94
-onlar:resüllerden hiçbirini birinden ayırt etmezler. bakara-136
-onlar:yeryüzünde alçak gönüllü olarak yürürler. furkan-63
-onlar:ölçüyü ve tartıyı doğru olarak yaparlar. en’am-52
-onlar:helal ve temiz olan şeylerden yerler. bakara-168
-onlar:asla yalan şahitlik yapmazlar. furkan-72
-onlar:dillerini eğip bükerek(geveliyerek )konuşmazlar. nisa-135
-onlar:. insanlar arasında adaletle hükmederler. en’am-151
-onlar: yoksulluk yüzünden evlatlarını öldürmezler. en’am-151
-onlar: yeminlerini hiçbirzaman bozmazlar. nahl-91
-onlar:adaklarını yerine getirirler. insan-7
-onlar:’ın ahdini yerine getirirler,anlaşmayı bozmazlar rad-20
-onlar:yakınlarına(akrabalarına)yardım ederler bakara-177
-onlar:yolda kalmışlara ve hastalara yardım ederler bakara-177
-onlar:yoksullara ve esir düşenlere yardım ederler bakara-177
-onlar:zorda,darda ve savaş anlarında sabrederler bakara-177
-onlar:verilen rızıktan yerli yerince harcarlar enfal-3
-onlar:geceleri az uyurlar zariyat-17
-onlar: o gün yüzlerindeki secde izi ile tanınırlar fetih-29
-onlar:insanlara iyiyi emrader, kötülükten de alıkorlar enfal-71
-onlar:açıklanınca hoşlarına gitmeyecek şeyleri sormazlar maide-101
-onlar:yapacakları işlerde kendi aralarında danışırlar şura-38
-onlar:gerçekten felaha kavuşanlardır mü’minun-1
+İnsanların arasında adaletle hükmederim                      (En'am,151)
+Allah'a asla şirk koşmam                                     (Furkan,68)
+Iffetimi korurum                                             (Furkan,68)
+Hakkı bile bile gizlemem                                     (Bakara,44)
+Namazımı huşu içinde kılarım                                 (Mü'minun,2)
+Namazı dosdoğru kılarım                                      (Mü'minun,9)
+Anne ve babama öf bile demem                                 (İsra,23)
+Boş şeylerden tümüyle yüz çeviririm                          (Mü'minun,3)
+Malımla ve canımla cihad ederim                              (Tevbe,5)
+Asla zanda bulunmam                                          (Casiye,24)
+Cahillerle tartışmam                                         (Furkan,63)
+kınayıcının kınamasından korkmam                             (Maide,54)
+Asla yalan söylemem                                          (Mü'minun,8)
+Emanetlere ihanet etmem                                      (Bakara,177)
+Sözümde dururum                                              (Bakara,177)
+Zekatı hakkıyla veririm                                      (Bakara,177)
+Yetim hakkı yemem                                            (Nisa,2)
+Yolda kalmışa yardım ederim                                  (Bakara,17)
+Kafirlere karşı sert, Müminlere karşı yumuşak davranırım     (Fetih,29)
+İnsanların kusurlarını affederim                             (Al-i İmran,135)
+Yanlızca Allah'a dayanıp güvenirim                           (Tevbe,20)
+Darlıkta, bollukta infak ederim                              (Al-i İmran,133)
+Kızdığım zaman öfkemi yenebilirim                            (Al-i İmran,133)
+Başkalarının ilahlarına sövmem                               (En'am,108)
+Zinaya asla yaklaşmam                                        (Mü'minun,5)
+Yeryüzünde alçak gönülüllük ile yürürüm                      (Furkan,63)
+Ölçü ve tartıyı doğru olarak yaparım                         (En'am,52)
+Helal ve temiz olandan yerim                                 (Bakara,168)
+Allah'ın adı anıldığında kalbim ürperirir                    (Enfal,2)
+Kur'an'ı ağır ağır düşünerek okurum                          (Müzemmil,4)  
+Kafirlerin gösterişli hayatlarına özenmem                    (Kehf,28)
+Zenginlik ve makam beni etkilemez                            (Hac,41)
+Yumuşak, kibar ve zarif konuşurum                            (Taha,44)
